@@ -1,0 +1,242 @@
+.navbar {
+    background-color: azure;
+    overflow: hidden;   
+    /* display: flex;   */
+}
+
+.navbar a.Header{
+    font-size: 30px;
+    padding: 22px 20px;
+    align-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    float: left;
+    align-items: center;
+    align-content: center;
+    padding: 14px 20px;
+    display: flex;
+}
+
+.navbar-right {
+    float: right;
+    align-items: center;
+    align-content: center;
+    padding: 14px 16px;
+    display: flex;
+}
+
+
+.navbar a:hover {
+    background-color: aliceblue;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Dashboard content styles */
+.dashboard-content {
+    padding: 20px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background: #2B2b2b;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconFooter {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+.copyright {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 80%;
+}
+
+.Menu-icon {
+    font-size: 28px;
+    display: none;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-left {       
+        flex-direction: column;
+    }
+    .navbar-right{
+        flex-direction: column;
+    }
+    .Menu-icon {
+        flex-direction: row-reverse;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 800px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.email {
+    flex-direction: column;
+    justify-content: flex-start;
+    display:  flex;
+    align-items: center;
+}
+
+.password {
+    display: flex;
+    align-items: center;
+}
+
+.password label{
+    right: 30px;
+}
+
+.remember-me {
+    text-align: left;
+}
+
+.login-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    text-align: right;
+}
+
+.signup-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.terms {
+    text-align: left;
+}
+
+.register-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.category-container {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.category-list {
+    text-align: left;
+}
+
+.category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.category-name {
+    flex: 1;
+}
+
+.category-actions {
+    flex: 1;
+    text-align: right;
+}
+
+.btn-add {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-edit,
+.btn-delete {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}

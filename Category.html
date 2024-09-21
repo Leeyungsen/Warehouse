@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/index.html" class="Header">Warehouse</a>                  
+        <div id="navbar-left" class="navbar-left">           
+            <a href="#">Category</a>
+            <a href="./AboutUs.html">About Us</a>
+        </div>
+        <div id="navbar-right" class="navbar-right">
+            <a href="./Login.html">Login</a>
+            <a href="./SignUp.html">Sign Up</a>
+        </div>                               
+    </div>  
+    <div class="category-container">
+        <h2>Category Page</h2>
+        <div class="addCategories">
+            <label for="Name">Add Category:</label>
+            <input type="text" id="Name">
+            
+        </div>
+        <button class="btn-add" id="add-category-button">Add Category</button>
+        <div class="category-item" data-category-id="categoryId">
+            <div class="category-actions" id="primary-btn">
+                <button class="btn-edit" id="btn-edit">Edit</button>
+                <button class="btn-delete" id="btn-delete">Delete</button>
+            </div>
+        </div>        
+        <div class="category-list" id="category-list">
+            <!-- Sample category items -->
+            <div class="category-item" >
+            
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="https://twitter.com/"><img src="./images/twitter.png" class="icon"></a>
+            <a href="https://www.facebook.com/"><img src="./images/facebook.png" class="icon"></a>
+            <a href="https://www.instagram.com/"><img src="./images/instagram.png" class="icon"></a>
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2021 Frederick Maxwellee, All Rights Reserved
+        </div>
+    </footer>
+    <script src="category.js"></script>
+</body>
+</html>

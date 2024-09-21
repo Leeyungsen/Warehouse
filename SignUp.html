@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <p class="error" id="name-error"></p>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            <p class="error" id="email-error"></p>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <p class="error" id="password-error"></p>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <p class="error" id="confirm-password-error"></p>
+
+            <div class="terms">
+                <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+                <label for="acceptTerms">I accept the terms and conditions</label>
+                <p class="error" id="terms-error"></p>
+            </div>
+
+            <input type="submit" class="register-button" value="Register">
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="/signUp.js"></script>
+</body>
+</html>
